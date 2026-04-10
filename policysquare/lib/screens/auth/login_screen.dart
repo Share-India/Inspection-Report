@@ -101,10 +101,10 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Icon(Icons.admin_panel_settings, size: 80, color: Colors.blueAccent),
-                        SizedBox(height: 32),
-                        Text(
+                      children: [
+                        Image.asset('assets/images/logo_icon.png', height: 80),
+                        const SizedBox(height: 32),
+                        const Text(
                           'PolicySquare',
                           style: TextStyle(
                             fontSize: 56,
@@ -113,8 +113,8 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                             color: Colors.white,
                           ),
                         ),
-                        SizedBox(height: 16),
-                        Text(
+                        const SizedBox(height: 16),
+                        const Text(
                           'The premiere platform for commercial risk assessment, claims processing, and policy management. Built for maximum efficiency and security.',
                           style: TextStyle(
                             fontSize: 18,
@@ -140,10 +140,13 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   if (!isLargeScreen) ...[
-                    const CircleAvatar(
+                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color(0xFF1E88E5),
-                      child: Icon(Icons.admin_panel_settings, size: 40, color: Colors.white),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Image.asset('assets/images/logo_icon.png', color: Colors.white),
+                      ),
                     ),
                     const SizedBox(height: 24),
                     const Text(

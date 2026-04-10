@@ -4,6 +4,7 @@ import 'package:printing/printing.dart';
 import 'package:policysquare/data/models/risk_assessment.dart';
 import 'dart:convert';
 import 'package:intl/intl.dart';
+import 'package:flutter/services.dart' as flutter;
 
 class PdfGenerator {
   static Future<void> generateAndPrint(
@@ -87,6 +88,7 @@ class PdfGenerator {
       PdfGoogleFonts.openSansRegular(),
       PdfGoogleFonts.openSansBold(),
       PdfGoogleFonts.notoSansRegular(),
+      flutter.rootBundle.load('assets/images/logo_icon.png').then((byteData) => pw.MemoryImage(byteData.buffer.asUint8List())),
     ]);
 
     locMap = futures[0] as pw.ImageProvider?;
@@ -99,6 +101,7 @@ class PdfGenerator {
     final fontBold = futures[6] as pw.Font;
     // Resolve Helvetica-Bold Unicode Crash by giving a vast multi-language fallback
     final fontFallback1 = futures[7] as pw.Font;
+    final logoImage = futures[8] as pw.ImageProvider;
 
     // Page format
     final pageTheme = pw.PageTheme(
@@ -141,6 +144,8 @@ class PdfGenerator {
           pw.Column(
             crossAxisAlignment: pw.CrossAxisAlignment.end,
             children: [
+              pw.Image(logoImage, height: 26),
+              pw.SizedBox(height: 4),
               pw.Text(
                 'PolicySquare',
                 style: pw.TextStyle(
