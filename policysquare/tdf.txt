@@ -1,0 +1,215 @@
+Nice concept 👌 Policy Square sounds solid.
+Below is a **clean, detailed prompt** you can paste directly into **Android Studio Gemini** to generate the app structure, UI, and integration ideas.
+
+---
+
+### 📌 Prompt for Android Studio Gemini
+
+> **App Name:** Policy Square
+>
+> Create an **Android application** named **Policy Square**, an **all-in-one insurance broker app** that provides insurance services for **Motor, Commercial, Health, and Life insurance**.
+>
+> ### Core Requirements:
+>
+> 1. **Architecture & Tech**
+>
+>    * Use **Kotlin**
+>    * Follow **MVVM architecture**
+>    * Use **Jetpack Compose** for UI
+>    * Use **Retrofit** for API integration
+>    * Use **Hilt/Dagger** for dependency injection
+>    * Use **Coroutines + Flow** for async operations
+> 2. **App Features**
+>
+>    * Home dashboard showing:
+>
+>      * Motor Insurance
+>      * Commercial Insurance
+>      * Health Insurance
+>      * Life Insurance
+>    * Each insurance type should have:
+>
+>      * Quote request
+>      * Policy comparison
+>      * Buy / Renew policy
+>    * User authentication (login/signup)
+>    * Profile management
+> 3. **Interactive UI**
+>
+>    * Modern, clean, and professional UI
+>    * Card-based layout for insurance categories
+>    * Smooth animations and transitions
+>    * Bottom navigation (Home, Policies, Chat, Profile)
+> 4. **Chatbot Integration**
+>
+>    * Add an **interactive chatbot** available from the home screen and bottom navigation
+>    * Chatbot features:
+>
+>      * Answer insurance-related questions
+>      * Help users choose the right insurance
+>      * Guide users through policy purchase steps
+>    * Chat UI similar to WhatsApp-style messaging
+> 5. **API Integration**
+>
+>    * Integrate REST APIs for:
+>
+>      * Insurance quotes
+>      * Policy listings
+>      * User data
+>      * Chatbot responses
+>    * Implement proper error handling and loading states
+>    * Use mock APIs where real APIs are unavailable
+> 6. **Data & Security**
+>
+>    * Secure API calls
+>    * Token-based authentication
+>    * Basic local caching using Room or DataStore
+> 7. **Additional**
+>
+>    * Include sample API models and endpoints
+>    * Add comments explaining key parts of the code
+>    * Make the project scalable and production-ready
+>
+> Generate:
+>
+> * Project structure
+> * Main screens with Compose UI
+> * Sample API service classes
+> * ViewModels
+> * Chatbot UI and integration logic
+
+---
+
+If you want, I can:
+
+* Make this **shorter & more aggressive** (for faster Gemini output)
+* Add **real insurance API examples**
+* Customize it for **India-based insurance rules**
+* Add **payment gateway (Razorpay/Stripe)**
+
+Just tell me 👍
+
+
+
+
+
+
+
+
+
+Prompt for Android Studio Gemini
+
+App Name: Policy Square
+
+Create an Android application named Policy Square, an all-in-one insurance broker app that provides insurance services for Motor, Commercial, Health, and Life insurance.
+
+Core Requirements:
+
+Architecture & Tech
+
+Use Kotlin
+
+Follow MVVM architecture
+
+Use Jetpack Compose for UI
+
+Use Retrofit for API integration
+
+Use Hilt/Dagger for dependency injection
+
+Use Coroutines + Flow for async operations
+
+App Features
+
+Home dashboard showing:
+
+Motor Insurance
+
+Commercial Insurance
+
+Health Insurance
+
+Life Insurance
+
+Each insurance type should have:
+
+Quote request
+
+Policy comparison
+
+Buy / Renew policy
+
+User authentication (login/signup)
+
+Profile management
+
+Interactive UI
+
+Modern, clean, and professional UI
+
+Card-based layout for insurance categories
+
+Smooth animations and transitions
+
+Bottom navigation (Home, Policies, Chat, Profile)
+
+Chatbot Integration
+
+Add an interactive chatbot available from the home screen and bottom navigation
+
+Chatbot features:
+
+Answer insurance-related questions
+
+Help users choose the right insurance
+
+Guide users through policy purchase steps
+
+Chat UI similar to WhatsApp-style messaging
+
+API Integration
+
+Integrate REST APIs for:
+
+Insurance quotes
+
+Policy listings
+
+User data
+
+Chatbot responses
+
+Implement proper error handling and loading states
+
+Use mock APIs where real APIs are unavailable
+
+Data & Security
+
+Secure API calls
+
+Token-based authentication
+
+Basic local caching using Room or DataStore
+
+Additional
+
+Include sample API models and endpoints
+
+Add comments explaining key parts of the code
+
+Make the project scalable and production-ready
+
+Generate:
+
+Project structure
+
+Main screens with Compose UI
+
+Sample API service classes
+
+ViewModels
+
+Chatbot UI and integration logic
+
+
+

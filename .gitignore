@@ -1,0 +1,42 @@
+# General
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+uploads/
+
+# Flutter / Dart
+policysquare/build/
+policysquare/.dart_tool/
+policysquare/.flutter-plugins
+policysquare/.flutter-plugins-dependencies
+policysquare/.pub-cache/
+policysquare/.pub/
+policysquare/pubspec.lock
+policysquare/ios/Pods/
+policysquare/ios/.symlinks/
+policysquare/ios/Flutter/Flutter.podspec
+policysquare/android/.gradle/
+policysquare/android/app/build/
+
+# Node
+**/node_modules/
+**/dist/
+**/build/
+*.pyc
+__pycache__/
+
+# Environment
+.env
