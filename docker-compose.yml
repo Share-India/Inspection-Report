@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   db:
     image: postgres:15-alpine
@@ -40,25 +42,14 @@ services:
       - "443:443"
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
-      - certbot_webroot:/var/www/certbot
-      - certbot_certs:/etc/letsencrypt
     depends_on:
       - backend
     networks:
       - policysquare_network
 
-  certbot:
-    image: certbot/certbot
-    container_name: certbot
-    command: certonly --webroot --webroot-path=/var/www/certbot --email admin@shareindiainsurance.com --agree-tos --no-eff-email -d inspection.shareindiainsurance.com
-    volumes:
-      - certbot_webroot:/var/www/certbot
-      - certbot_certs:/etc/letsencrypt
 
 volumes:
   pgdata:
-  certbot_webroot:
-  certbot_certs:
 
 networks:
   policysquare_network:
