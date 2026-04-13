@@ -102,8 +102,8 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset('assets/images/logo_icon.png', height: 80),
-                        const SizedBox(height: 32),
+                        Image.asset('assets/images/logo_icon.png', height: 140),
+                        const SizedBox(height: 12),
                         const Text(
                           'PolicySquare',
                           style: TextStyle(
@@ -115,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                         ),
                         const SizedBox(height: 16),
                         const Text(
-                          'The premiere platform for commercial risk assessment, claims processing, and policy management. Built for maximum efficiency and security.',
+                          'The premiere platform for commercial risk assessment inspections. Built for maximum efficiency and security.',
                           style: TextStyle(
                             fontSize: 18,
                             height: 1.5,
@@ -140,15 +140,8 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   if (!isLargeScreen) ...[
-                     CircleAvatar(
-                      radius: 40,
-                      backgroundColor: Color(0xFF1E88E5),
-                      child: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Image.asset('assets/images/logo_icon.png', color: Colors.white),
-                      ),
-                    ),
-                    const SizedBox(height: 24),
+                    Center(child: Image.asset('assets/images/logo_icon.png', height: 120)),
+                    const SizedBox(height: 12),
                     const Text(
                       'PolicySquare',
                       textAlign: TextAlign.center,
@@ -397,7 +390,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
 
         if (mounted) {
           setState(() => _isLoading = false);
-          Navigator.pushReplacementNamed(context, '/home');
+          Navigator.pushReplacementNamed(context, '/inspection');
         }
       }
     } catch (e) {
