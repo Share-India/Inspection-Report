@@ -59,7 +59,7 @@ class _PolicySquareAppState extends State<PolicySquareApp> {
               _isLoggedIn ? const InspectionSelectionScreen() : const LoginScreen(),
           '/login': (context) => const LoginScreen(),
           '/inspection': (context) => const InspectionSelectionScreen(),
-          '/home': (context) => const MainScreen(),
+          '/home': (context) => const InspectionSelectionScreen(),
         },
         debugShowCheckedModeBanner: false,
       ),
