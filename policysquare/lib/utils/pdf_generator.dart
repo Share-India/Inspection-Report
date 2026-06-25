@@ -147,7 +147,7 @@ class PdfGenerator {
               pw.Image(logoImage, height: 26),
               pw.SizedBox(height: 4),
               pw.Text(
-                'PolicySquare',
+                'RiskGo',
                 style: pw.TextStyle(
                   fontWeight: pw.FontWeight.bold,
                   fontSize: 16,
@@ -210,8 +210,9 @@ class PdfGenerator {
 
               pw.SizedBox(height: 40),
 
-              // PolicySquare Risk Score Gauge Visual Logo
+              // RiskGo Risk Score Gauge Visual Logo
               pw.SizedBox(
+                height: 200,
                 width: 250,
                 child: pw.Column(
                   mainAxisAlignment: pw.MainAxisAlignment.center,

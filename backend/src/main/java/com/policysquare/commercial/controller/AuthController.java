@@ -32,15 +32,15 @@ public class AuthController {
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest request) {
         if (userRepository.existsByUsername(request.getUsername())) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error: Username is already taken!");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(java.util.Map.of("message", "Error: Username is already taken!"));
         }
 
         if (userRepository.existsByEmail(request.getEmail())) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error: Email is already in use!");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(java.util.Map.of("message", "Error: Email is already in use!"));
         }
 
         if (userRepository.existsByMobileNumber(request.getMobileNumber())) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error: Mobile number is already in use!");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(java.util.Map.of("message", "Error: Mobile number is already in use!"));
         }
 
         AppUser user = new AppUser();

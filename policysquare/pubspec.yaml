@@ -87,6 +87,8 @@ flutter:
   assets:
     - assets/images/logo_icon.png
     - assets/images/logo_full.png
+    - assets/images/RiskGo.png
+    - assets/images/SHAREINDIA.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

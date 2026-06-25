@@ -18,12 +18,12 @@ class AuthService {
       if (e.response != null && e.response?.data != null) {
         final data = e.response!.data;
         if (data is Map) {
-          final messages = data.entries.map((e) => '\${e.key}: \${e.value}').join('\\n');
+          final messages = data.entries.map((e) => '${e.key}: ${e.value}').join('\n');
           throw Exception(messages.isNotEmpty ? messages : 'Login failed');
         }
         throw Exception(data.toString());
       } else {
-        throw Exception('Network error during login. Details: \${e.error} (Message: \${e.message})');
+        throw Exception('Network error during login. Details: ${e.error} (Message: ${e.message})');
       }
     }
   }
@@ -44,12 +44,12 @@ class AuthService {
       if (e.response != null && e.response?.data != null) {
         final data = e.response!.data;
         if (data is Map) {
-          final messages = data.entries.map((e) => '\${e.key}: \${e.value}').join('\\n');
+          final messages = data.entries.map((e) => '${e.key}: ${e.value}').join('\n');
           throw Exception(messages.isNotEmpty ? messages : 'Signup failed');
         }
         throw Exception(data.toString());
       } else {
-        throw Exception('Network error during signup. Details: \${e.error} (Message: \${e.message})');
+        throw Exception('Network error during signup. Details: ${e.error} (Message: ${e.message})');
       }
     }
   }

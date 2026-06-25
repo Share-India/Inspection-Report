@@ -12,18 +12,18 @@ class ApiClient {
   }
 
   ApiClient._internal() {
-    String baseUrl = 'http://127.0.0.1:8081'; // Default
+    String baseUrl = 'http://localhost:8081'; // Default
     if (kIsWeb) {
       if (kReleaseMode) {
         baseUrl = ''; // In production Nginx maps /api directly on the same domain
       } else {
-        baseUrl = 'http://127.0.0.1:8081';
+        baseUrl = 'http://localhost:8081';
       }
     } else {
       if (Platform.isAndroid) {
         baseUrl = 'http://10.0.2.2:8081';
       } else {
-        baseUrl = 'http://127.0.0.1:8081';
+        baseUrl = 'http://localhost:8081';
       }
     }
 

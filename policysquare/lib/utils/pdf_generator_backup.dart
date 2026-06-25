@@ -34,7 +34,7 @@ class PdfGenerator {
                   crossAxisAlignment: pw.CrossAxisAlignment.end,
                   children: [
                     pw.Text(
-                      'PolicySquare',
+                      'RiskGo',
                       style: pw.TextStyle(
                         font: fontBold,
                         fontSize: 24,
@@ -85,7 +85,7 @@ class PdfGenerator {
               _buildRiskGauge(score['actualPercent'] ?? 0),
               pw.Spacer(),
               pw.Text(
-                'PolicySquare - Share India Insurance',
+                'RiskGo - Share India Insurance',
                 style: pw.TextStyle(
                   font: fontBold,
                   fontSize: 16,

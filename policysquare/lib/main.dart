@@ -9,17 +9,17 @@ import 'package:policysquare/screens/commercial/inspection_selection_screen.dart
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  runApp(const PolicySquareApp());
+  runApp(const RiskGoApp());
 }
 
-class PolicySquareApp extends StatefulWidget {
-  const PolicySquareApp({super.key});
+class RiskGoApp extends StatefulWidget {
+  const RiskGoApp({super.key});
 
   @override
-  State<PolicySquareApp> createState() => _PolicySquareAppState();
+  State<RiskGoApp> createState() => _RiskGoAppState();
 }
 
-class _PolicySquareAppState extends State<PolicySquareApp> {
+class _RiskGoAppState extends State<RiskGoApp> {
   bool _isLoggedIn = false;
 
   @override
@@ -50,7 +50,7 @@ class _PolicySquareAppState extends State<PolicySquareApp> {
         ),
       ],
       child: MaterialApp(
-        title: 'PolicySquare',
+        title: 'RiskGo',
         theme: AppTheme.lightTheme,
         // Define routes for cleaner navigation
         initialRoute: _isLoggedIn ? '/inspection' : '/login',
